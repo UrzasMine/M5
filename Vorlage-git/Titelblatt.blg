@@ -1,0 +1,18 @@
+[1] Config.pm:328> INFO - This is Biber 2.21
+[1] Config.pm:331> INFO - Logfile is 'Titelblatt.blg'
+[932] biber-MSWIN64:342> INFO - === 
+[1230] Biber.pm:421> INFO - Reading 'Titelblatt.bcf'
+[1514] Biber.pm:1002> INFO - Found 2 citekeys in bib section 0
+[1557] Biber.pm:4487> INFO - Processing section 0
+[1630] Biber.pm:4678> INFO - Looking for bibtex file 'literatur.bib' for section 0
+[1792] bibtex.pm:1713> INFO - LaTeX decoding ...
+[1826] bibtex.pm:1519> INFO - Found BibTeX data source 'literatur.bib'
+[1880] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1884] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1884] Biber.pm:4307> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[1884] Biber.pm:4313> INFO - No sort tailoring available for locale 'de-DE'
+[1886] bbl.pm:676> INFO - Writing 'Titelblatt.bbl' with encoding 'UTF-8'
+[1887] bbl.pm:779> INFO - Output to Titelblatt.bbl
+[1889] Biber.pm:132> WARN - I didn't find a database entry for 'Protokoll-W1' (section 0)
+[1890] Biber.pm:132> WARN - I didn't find a database entry for 'Wärmeleitfähigkeiten' (section 0)
+[1890] Biber.pm:134> INFO - WARNINGS: 2
