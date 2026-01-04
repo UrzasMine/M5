@@ -1,68 +1,58 @@
 \section{Theoretische Grundlagen}
 
 \subsection{Bewegungsgleichung}
-Die Bewegungsgleichung für ein normales Physikalisches Pendel wird durch
+Die Bewegungsgleichung für ein normales physikalisches Pendel wird durch
 \begin{equation}
-    \centering
     I \cdot \ddot{\varphi} + D_0 \cdot \varphi = 0
     \label{eq:NB}
 \end{equation}
-beschrieben. Wobei hierbei I das Trägheitsmoment des Pendels beschreibt und $D_0$ das Rückstellmoment beschreibt, welches durch die Schwerkraft hervorgerufen wird. Wichtig bei diesem Ansatz anzumerken ist dass er nur mithilfe der klein Winkelnäherung funktioniert deshalb wird von einer Auslenkung des Pendels unterhalb von $5°$ ausgegangen. Die Lösung der Bewegungsgleichung für ein einfaches Physikalisches Pendel lautet, 
+beschrieben. Wobei hierbei $I$ das Trägheitsmoment des Pendels beschreibt und $D_0$ das Rückstellmoment, welches durch die Schwerkraft hervorgerufen wird. Wichtig bei diesem Ansatz anzumerken ist, dass er nur mithilfe der Kleinwinkelnäherung funktioniert, deshalb wird von einer Auslenkung des Pendels unterhalb von $5^\circ$ ausgegangen. Die Lösung der Bewegungsgleichung für ein einfaches physikalisches Pendel lautet
 \begin{equation}
-    \centering
-    \varphi = C_1 cos\left(\omega \cdot t\right) + C_2 sin\left(\omega \cdot t\right),
+    \varphi = C_1 \cos\left(\omega \cdot t\right) + C_2 \sin\left(\omega \cdot t\right),
     \label{eq:Lsg1}
 \end{equation}
-aus dieser Lösung und den Anfangsbedingungen, 
+aus dieser Lösung und den Anfangsbedingungen
 \begin{figure}[H]
     \centering
-   $ \varphi\left(t=0\right) =0,$\\
-   $ \dot{\varphi}\left(t=0\right)=0 $
+    $ \varphi\left(t=0\right) = 0,$\\
+    $ \dot{\varphi}\left(t=0\right) = 0 $
 \end{figure}
-ergibt sich nun als Lösung,
+ergibt sich nun als Lösung
 \begin{equation}
-    \centering
-    \varphi = \varphi_0 \cdot cos\left(\omega \cdot t\right).
+    \varphi = \varphi_0 \cdot \cos\left(\omega \cdot t\right).
     \label{eq:Lsgphi}
 \end{equation}
 Wobei die Kreisfrequenz $\omega$ durch
 \begin{equation}
-    \centering
     \omega = \sqrt{\frac{D_0}{I}}
     \label{omega}
 \end{equation}
 berechnet werden kann.
 
-Bei der Kopplung von zwei Pendeln kommt nun ein weiterer Term hinzu, dieser ist ein weiteres Drehmoment D welches Proportional zum Unterschied der Auslenkung der beiden Pendel ist. Wenn dieser Zusatz nun in Gleichung \ref{eq:NB} eingefügt wird erhält man, 
+Bei der Kopplung von zwei Pendeln kommt nun ein weiterer Term hinzu. Dieser ist ein weiteres Drehmoment $D$, welches proportional zum Unterschied der Auslenkung der beiden Pendel ist. Wenn dieser Zusatz nun in Gleichung \ref{eq:NB} eingefügt wird, erhält man
 \begin{equation}
-    \centering
-    I \cdot \ddot{\varphi_1} + D_0 \cdot \varphi_1 D\left(\varphi_1 - \varphi_2\right) = 0 
+    I \cdot \ddot{\varphi_1} + D_0 \cdot \varphi_1 + D\left(\varphi_1 - \varphi_2\right) = 0
     \label{eq:Pendel1}
 \end{equation}
 \begin{equation}
-    \centering
-    I \cdot \ddot{\varphi_2} + D_0 \cdot \varphi_2 D\left(\varphi_2 - \varphi_1\right) = 0 
+    I \cdot \ddot{\varphi_2} + D_0 \cdot \varphi_2 + D\left(\varphi_2 - \varphi_1\right) = 0
     \label{eq:Pendel2}
 \end{equation}
-als Gleichungen für die zwei gekoppelten Pendel. Um diese Bewegungsgleichungen zu lösen wird jeweils die Addition und Subtraktion der Bewegungsgleichungen \ref{eq:Pendel1} und \ref{eq:Pendel2} betrachtet. Diese nehmen dann folgende Form an, 
+als Gleichungen für die zwei gekoppelten Pendel \cite{M5}. Um diese Bewegungsgleichungen zu lösen, wird jeweils die Addition und Subtraktion der Bewegungsgleichungen \ref{eq:Pendel1} und \ref{eq:Pendel2} betrachtet. Diese nehmen dann folgende Form an
 \begin{equation}
-    \centering
-    I\left(\ddot{\varphi_1} + \ddot{\varphi_2}\right) = - D_0 \cdot\left(\varphi_1 + \varphi_2\right),
+    I\left(\ddot{\varphi_1} + \ddot{\varphi_2}\right) = - D_0 \cdot \left(\varphi_1 + \varphi_2\right),
 \end{equation}
 \begin{equation}
-    \centering
     I\left(\ddot{\varphi_1} - \ddot{\varphi_2}\right) = - \left(D_0 + 2D\right) \cdot \left(\varphi_1 - \varphi_2\right).
 \end{equation}
-Die aus diesen Formeln folgenden Allgemeinen Lösungen nehmen nun, 
+Die aus diesen Formeln folgenden allgemeinen Lösungen nehmen nun
 \begin{equation}
-    \centering
-    \varphi_1 + \varphi_2 = C_1 \cdot cos\left(\omega_1 \cdot t\right) + C_2 \cdot sin\left(\omega_1 \cdot t\right)
+    \varphi_1 + \varphi_2 = C_1 \cdot \cos\left(\omega_1 \cdot t\right) + C_2 \cdot \sin\left(\omega_1 \cdot t\right)
     \label{Allg1}
 \end{equation}
-und 
+und
 \begin{equation}
-    \centering
-    \varphi_1 - \varphi_2 = C_3 \cdot cos\left(\omega_2 \cdot t\right) + C_4 \cdot sin\left(\omega_2 \cdot t\right)
+    \varphi_1 - \varphi_2 = C_3 \cdot \cos\left(\omega_2 \cdot t\right) + C_4 \cdot \sin\left(\omega_2 \cdot t\right)
     \label{Allg2}
 \end{equation}
 als Form an.
@@ -70,49 +60,42 @@ als Form an.
 \subsection{Spezielle Schwingungsformen der gekoppelten Pendel}
 
 \subsubsection{Normalschwingung}
-Bei den Normalschwingungen findet kein Energieaustausch zwischen den einzelnen Pendeln statt, dadurch verändern sich die Schwingungsaplituden der einzelnen Pendel, abgesehen von Dämpfungsverlusten zeitlich nicht. 
-\subsubsection*{1.Normalschwingung}
-Die 1.Normalschwingung erhält man wenn beide Pendel mit dem gleichen Winkel in die gleiche Richtung ausgelenkt werden und in gleicher Phase schwingen. Die Anfangsbedingungen hierfür sind wie folgt,
+Bei den Normalschwingungen findet kein Energieaustausch zwischen den einzelnen Pendeln statt, dadurch verändern sich die Schwingungsamplituden der einzelnen Pendel, abgesehen von Dämpfungsverlusten, zeitlich nicht \cite{M5}.
+
+\subsubsection*{1.~Normalschwingung}
+Die 1.~Normalschwingung erhält man, wenn beide Pendel mit dem gleichen Winkel in die gleiche Richtung ausgelenkt werden und in gleicher Phase schwingen. Die Anfangsbedingungen hierfür sind wie folgt
 \begin{equation*}
-    \centering
-    \varphi_1\left(t=0\right) = \varphi_2\left(t=0\right)= \varphi_0,
+    \varphi_1\left(t=0\right) = \varphi_2\left(t=0\right) = \varphi_0,
 \end{equation*}
 \begin{equation*}
-    \centering
-    \dot{\varphi_1}\left(t=0\right) = \dot{\varphi_2}\left(t=0\right) = 0
+    \dot{\varphi_1}\left(t=0\right) = \dot{\varphi_2}\left(t=0\right) = 0.
 \end{equation*}
-aus diesen Anfangsbedingungen kann nun als Lösung der Bewegungsgleichungen für beide Pendel,
+Aus diesen Anfangsbedingungen kann nun als Lösung der Bewegungsgleichungen für beide Pendel
 \begin{equation}
-    \centering
-    \varphi_1 = \varphi_2 = \varphi_0 \cdot cos\left(\omega_1 \cdot t\right)
+    \varphi_1 = \varphi_2 = \varphi_0 \cdot \cos\left(\omega_1 \cdot t\right)
 \end{equation}
 hergeleitet werden.
-\subsubsection*{2.Normalschwingung}
-Bei der 2.Normalschwingung werden nun die beiden Pendel wieder mit dem gleichem Winkel ausgelenkt, nur diesmal um $\pi$ Phasenverschoben was zu $\varphi_1 = - \varphi_2$ führt. Daraus ergibt sich für die Anfangsbedingungen, 
+
+\subsubsection*{2.~Normalschwingung}
+Bei der 2.~Normalschwingung werden die beiden Pendel nun wieder mit dem gleichen Winkel ausgelenkt, nur diesmal um $\pi$ phasenverschoben, was zu $\varphi_1 = -\varphi_2$ führt. Daraus ergeben sich für die Anfangsbedingungen
 \begin{equation*}
-    \centering
     \varphi_1\left(t=0\right) = \varphi_0,
 \end{equation*}
 \begin{equation*}
-    \centering
-    \varphi_2\left(t=0\right) = - \varphi_0,
+    \varphi_2\left(t=0\right) = -\varphi_0,
 \end{equation*}
 \begin{equation*}
-    \centering
     \dot{\varphi_1}\left(t=0\right) = \dot{\varphi_2}\left(t=0\right) = 0.
 \end{equation*}
-Beim einsetzen dieser Anfangsbedingungen in die Gleichungen \ref{Allg1} und \ref{Allg2} ergibt für die beiden Pendel als Lösung, 
+Beim Einsetzen dieser Anfangsbedingungen in die Gleichungen \ref{Allg1} und \ref{Allg2} ergibt sich für die beiden Pendel als Lösung
 \begin{equation}
-    \centering
-    \varphi_1 = \varphi_0 \cdot cos\left(\omega_2 \cdot t\right),
+    \varphi_1 = \varphi_0 \cdot \cos\left(\omega_2 \cdot t\right),
 \end{equation}
 \begin{equation}
-    \centering
-    \varphi_2 = - \varphi_0 \cdot cos\left(\omega_2 \cdot t\right).
+    \varphi_2 = - \varphi_0 \cdot \cos\left(\omega_2 \cdot t\right).
 \end{equation}
-Die Kreisfrequenz $\omega_2$ wird nun im Gegensatz zu $\omega_1$ mit \ref{omega}, durch
+Die Kreisfrequenz $\omega_2$ wird nun im Gegensatz zu $\omega_1$ mit Gleichung \ref{omega} durch
 \begin{equation}
-    \centering
     \omega_2 = \sqrt{\frac{D_0 + 2D}{I}}
     \label{omega2}
 \end{equation}
@@ -120,74 +103,60 @@ errechnet.
 
 \newpage
 \subsubsection{Schwebungen}
-Bei Schwebungen kommt es im Gegensatz zu den Normalschwingungen zu Energieübertragung zwischen den Pendeln. Die einfachste Form eine Schwebung hervor zu rufen ist, wenn das eine Pendel ausgelenkt wird und das andere in der Ruhelage gelassen wird. Dadurch lauten dann die Anfangsbedingungen,
+Bei Schwebungen kommt es im Gegensatz zu den Normalschwingungen zu Energieübertragungen zwischen den Pendeln. Die einfachste Form, eine Schwebung hervorzurufen, ist, wenn das eine Pendel ausgelenkt wird und das andere in der Ruhelage gelassen wird. Dadurch lauten die Anfangsbedingungen
 \begin{equation*}
-    \centering
-    \varphi_1\left(t=0\right) = \varphi_0 ,
+    \varphi_1\left(t=0\right) = \varphi_0,
 \end{equation*}
 \begin{equation*}
-    \centering
-    \varphi_2\left(t=0\right) = 0 ,
+    \varphi_2\left(t=0\right) = 0,
 \end{equation*}
 \begin{equation*}
-    \centering
     \dot{\varphi_1}\left(t=0\right) = \dot{\varphi_2}\left(t=0\right) = 0.
 \end{equation*}
-Durch einsetzen in die Gleichungen \ref{Allg1} und \ref{Allg2}, liefern diese Anfangsbedingungen dann für die Amplituden, 
+Durch Einsetzen in die Gleichungen \ref{Allg1} und \ref{Allg2} liefern diese Anfangsbedingungen dann für die Amplituden
 \begin{equation*}
-    \centering
-    C_1 = C_3 = \varphi_0 ,
+    C_1 = C_3 = \varphi_0,
 \end{equation*}
 \begin{equation*}
-    \centering
     C_2 = C_4 = 0.
 \end{equation*}
-Aus diesen Amplituden ergibt sich für die Schwingungen nun,
+Aus diesen Amplituden ergibt sich für die Schwingungen nun
 \begin{equation}
-    \centering
-    \varphi_1 = \frac{\varphi_0}{2} \cdot cos\left(\omega_1 \cdot t\right) + \frac{\varphi_0}{2} \cdot cos\left(\omega_2 \cdot t\right) ,
+    \varphi_1 = \frac{\varphi_0}{2} \cdot \cos\left(\omega_1 \cdot t\right) + \frac{\varphi_0}{2} \cdot \cos\left(\omega_2 \cdot t\right),
 \end{equation}
 \begin{equation}
-    \centering
-    \varphi_2 = \frac{\varphi_0}{2} \cdot cos\left(\omega_1 \cdot t\right) - \frac{\varphi_0}{2} \cdot cos\left(\omega_2 \cdot t\right) ,
+    \varphi_2 = \frac{\varphi_0}{2} \cdot \cos\left(\omega_1 \cdot t\right) - \frac{\varphi_0}{2} \cdot \cos\left(\omega_2 \cdot t\right).
 \end{equation}
-um diese Gleichungen anschaulicher zu gestalten werden nun Additionstheoreme auf beide angewendet daraus ergibt sich für beide Gleichungen folgende Ausdrücke:
+Um diese Gleichungen anschaulicher zu gestalten, werden nun Additionstheoreme auf beide angewendet. Daraus ergeben sich für beide Gleichungen folgende Ausdrücke
 \begin{equation}
-    \centering
-    \varphi_1 = \varphi_0 \cdot cos\left(\frac{\omega_2 - \omega_1}{2} \cdot t\right) \cdot cos\left(\frac{\omega_2 + \omega_1}{2}\cdot t\right) ,
+    \varphi_1 = \varphi_0 \cdot \cos\left(\frac{\omega_2 - \omega_1}{2} \cdot t\right) \cdot \cos\left(\frac{\omega_2 + \omega_1}{2} \cdot t\right),
     \label{Schwebung1}
 \end{equation}
 \begin{equation}
-    \centering
-    \varphi_2 = \varphi_0 \cdot sin\left(\frac{\omega_2 - \omega_1}{2} \cdot t\right) \cdot sin\left(\frac{\omega_2 + \omega_1}{2}\cdot t\right) .
+    \varphi_2 = \varphi_0 \cdot \sin\left(\frac{\omega_2 - \omega_1}{2} \cdot t\right) \cdot \sin\left(\frac{\omega_2 + \omega_1}{2} \cdot t\right).
     \label{Schwebung2}
 \end{equation}
-Diese soeben beschriebenen Gleichungen \ref{Schwebung1} und \ref{Schwebung2} beschreiben Schwingungen mit der Frequenz, 
+Diese soeben beschriebenen Gleichungen \ref{Schwebung1} und \ref{Schwebung2} beschreiben Schwingungen mit der Frequenz
 \begin{equation}
-    \centering
     \omega_3 = \frac{\omega_1 + \omega_2}{2}.
     \label{omega3}
 \end{equation}
-Die Amplitude der Schwebungsänderung wird zusätzlich durch,
+Die Amplitude der Schwebungsänderung wird zusätzlich durch
 \begin{equation}
-    \centering
     \omega_s = \frac{\omega_1 - \omega_2}{2}
     \label{omega:s}
 \end{equation}
-beschrieben. Eine weitere Möglichkeit die $\omega_s$ zu erhalten ist durch,
+beschrieben. Eine weitere Möglichkeit, $\omega_s$ zu erhalten, ist durch
 \begin{equation}
-    \centering
     \omega_s = \frac{2\pi}{T_s}.
 \end{equation}
-Wobei $T_\text{s}$ die Halbe Schwebungsdauer beschreibt, hierbei ergibt sich für $T_\text{s}$, 
+Wobei $T_s$ die halbe Schwebungsdauer beschreibt. Hierbei ergibt sich für $T_s$
 \begin{equation}
-    \centering
-    T_\text{s} = \frac{4 \cdot \pi}{\omega_2 - \omega_1}.
+    T_s = \frac{4 \cdot \pi}{\omega_2 - \omega_1}.
 \end{equation}
-Der Kopplungsgrad der Pendel ist durch, 
+Der Kopplungsgrad der Pendel ist durch
 \begin{equation}
-    \centering
     K = \frac{D}{D_0 + D} = \frac{\omega_2^2 - \omega_1^2}{\omega_2^2 + \omega_1^2}
     \label{Kopplungsg}
 \end{equation}
-gegeben. 
+gegeben \cite{M5}.
